@@ -10,4 +10,10 @@ public interface BookRepository {
     List<Book> findAll();
 
     Optional<Book> findBookById(Long id);
+
+    List<Book> findAllByAuthor(String author);
+
+    Book update(Book book);
+
+    void deleteById(Long id);
 }
